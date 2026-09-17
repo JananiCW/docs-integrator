@@ -28,13 +28,13 @@ The steps below follow one example: a `GET claim/[string workflowId]/status` res
 2. In the node panel, under **Workflow**, click **Get Agent Result**. The **Get Agent Result** form opens.
 3. Fill in the form:
 
-   | Field | Required | Description |
-   |---|---|---|
-   | **Durable Agentic Workflow** | Yes | The durable agent to read the result from, `claimAgent` here. |
-   | **Instance Id** | Yes | The instance whose result is wanted, the value [Run Durable Agent](run-durable-agent.md) bound. Here it is the resource's `workflowId` path parameter. |
-   | **Wait For Result** | No | Selected by default, which blocks until the instance finishes. See [Wait or check back](#wait-or-check-back). |
-   | **Result** | Yes | The variable that receives the agent's result. Defaults to `agentResult`. |
-   | **Result Type** | Yes | The expected type of the result, `string` here. |
+   | Field                        | Required | Description                                                                                                                                            |
+   |------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+   | **Durable Agentic Workflow** | Yes      | The durable agent to read the result from, `claimAgent` here.                                                                                          |
+   | **Instance Id**              | Yes      | The instance whose result is wanted, the value [Run Durable Agent](run-durable-agent.md) bound. Here it is the resource's `workflowId` path parameter. |
+   | **Wait For Result**          | No       | Selected by default, which blocks until the instance finishes. See [Wait or check back](#wait-or-check-back).                                          |
+   | **Result**                   | Yes      | The variable that receives the agent's result. Defaults to `agentResult`.                                                                              |
+   | **Result Type**              | Yes      | The expected type of the result, `string` here.                                                                                                        |
 
 4. Click **Save**.
 

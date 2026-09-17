@@ -181,7 +181,7 @@ Paying out is the risky step, so gate it behind a person. The activity is create
 2. Set **Activity Name** to `payClaim`.
 3. Under **Parameters**, click **+ Add Parameter**. Set **Type** to `ExpenseClaim` and **Name** to `expenseClaim`, then click **Add**.
 4. Leave **Return Type** empty and click **Save**.
-5. On the register form, expand **Advanced Configurations** and select **Requires Approval**. Before the agent runs the activity, a review activity is created and the agent suspends durably until a reviewer proceeds or rejects.
+5. On the register form, expand **Advanced Configurations** and check **Requires Approval**. Now, before the agent runs the activity, a review activity is created and the agent suspends durably until a reviewer proceeds or rejects.
 6. Set **Reviewer Roles** to `Finance`, the roles permitted to decide that approval.
 7. Click **Save**.
 
