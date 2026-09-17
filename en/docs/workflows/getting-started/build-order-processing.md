@@ -148,7 +148,7 @@ Payment is confirmed by something outside the workflow, such as a payment gatewa
 <TabItem value="ui" label="Visual Designer" default>
 
 1. Log a line first, so the run says why it is sitting still. Click **+** below the activity call, scroll to the bottom of the node panel, and click **Show More Functions**.
-2. In the **Functions** panel, search for `printInfo` and click it in the results, under **Imported Functions** > **log**. Set **Msg** to `Waiting for payment` and click **Save**.
+2. In the **Functions** panel, under **Imported Functions** > **log**, click **printInfo**. Set **Msg** to `Waiting for payment` and click **Save**.
 3. Now add the wait. Click **+** below the log step.
 4. In the node panel, under **Workflow** > **Steps**, click **Await Data Event**. The **Await Data** form opens.
 5. Under **Data Waits**, fill in the entry:
@@ -335,10 +335,6 @@ The resource now starts a run for every order it receives and answers with that 
 
 :::tip Why `'order` and not `order`
 `order` is a Ballerina keyword, so the resource path is written as the quoted identifier `'order`. The HTTP path is unaffected: the resource still answers on `/order`.
-:::
-
-:::tip Other ways to start a run
-A service resource is not the only trigger. An automation or a file handler starts a run the same way, an operator can start one by hand from the [Integration Control Plane](../icp/start.md), which builds the input form from the workflow's input type, and any external system can start one through the [Management API](../reference/management-api.md) with `POST /workflows`. See [Start a workflow](../develop/start.md).
 :::
 
 ## Step 9: Deliver the payment confirmation
