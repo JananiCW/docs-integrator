@@ -32,7 +32,7 @@ The following steps cover the basics. For a detailed guide, see [WSO2 Identity P
 
 7. Click **Next**, then click **Finish**.
 
-The user can now sign in to the User Portal with **Sign In**. Share the User Portal link for your organization, or the organization name, with the user. See [Sign in to the User Portal](sign-in-to-user-portal.md).
+The user can now sign in to the User Portal with **Sign In**. If you invited the user to set their own password, the user must first open the invitation email and set a password. Share the User Portal link for your organization, or the organization name, with the user. See [Sign in to the User Portal](sign-in-to-user-portal.md).
 
 ## Create a role and assign it to a user
 

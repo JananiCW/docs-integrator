@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Publish an Integration to the User Portal
 description: "Publish AI agents, automations, and workflows from WSO2 Cloud - Integration Platform to the User Portal so that external users can use them."
 keywords: [wso2 cloud, user portal, publish, ai agents, automations, workflows, developer portal, lifecycle]
-slug: /manage/users-and-access/user-portal/publish-to-user-portal
+slug: /manage/users-and-access/user-portal/publish-integrations
 ---
 
 import ThemedImage from '@theme/ThemedImage';

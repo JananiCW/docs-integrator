@@ -3,7 +3,7 @@ sidebar_position: 3
 title: Sign In to the User Portal
 description: "Sign in to the User Portal of a WSO2 Cloud - Integration Platform organization with the account that your organization gave you or with an Integration Platform account."
 keywords: [wso2 cloud, user portal, sign in, single sign-on, external users, identity platform, ai agents, automations, workflows]
-slug: /manage/users-and-access/user-portal/sign-in-to-user-portal
+slug: /manage/users-and-access/user-portal/sign-in
 ---
 
 import ThemedImage from '@theme/ThemedImage';

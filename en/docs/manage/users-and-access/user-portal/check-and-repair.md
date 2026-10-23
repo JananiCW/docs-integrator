@@ -65,7 +65,7 @@ The following table lists the blockers that the page can show:
 | Blocker | Common causes | How to fix |
 |---|---|---|
 | **Developer Portal Key Manager** | The Developer Portal has no key manager, has more than one, or has one that belongs to a different organization, is disabled, or has no well-known endpoint. | Click **Configure Key Manager**. If the page does not show this button, follow the instructions in the blocker. |
-| **Developer Portal Key Manager** (token type) | The key manager uses a token type other than `EXTERNAL`. You cannot change the token type. | Delete the existing key manager in **Settings** > **Application Security** > **Identity Providers**, then click **Check again**. |
+| **Developer Portal Key Manager** (token type) | The key manager uses a token type other than `EXTERNAL`. You cannot change the token type. | Deleting the key manager can stop Developer Portal users who sign in through it from signing in. First, make sure that no applications or users depend on it. Then delete the existing key manager in **Settings** > **Application Security** > **Identity Providers**, and click **Check again**. |
 | **Trusted Token Issuer**, **User Portal Application**, or **User Portal API Resource** | A resource with the same name already exists in WSO2 Identity Platform, and the User Portal did not create it. | Rename or remove the resource in WSO2 Identity Platform, then click **Check again**. |
 | **Developer Portal Application** | An application with the same name already exists in the Developer Portal, or its keys are not mapped to the User Portal. | Correct the application in API Management, then click **Check again**. |
 
