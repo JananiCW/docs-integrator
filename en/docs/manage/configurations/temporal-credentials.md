@@ -1,7 +1,7 @@
 ---
 sidebar_position: 8
 title: Temporal Credentials
-description: "Connect workflow integrations on WSO2 Cloud - Integration Platform to a Temporal Cloud namespace or a self-hosted Temporal server, per environment."
+description: "Connect workflows on WSO2 Cloud - Integration Platform to a Temporal Cloud namespace or a self-hosted Temporal server, per environment."
 keywords: [wso2 cloud, temporal, temporal cloud, workflows, credentials, mtls, api key, environments]
 slug: /manage/configurations/temporal-credentials
 ---
