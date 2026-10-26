@@ -12,6 +12,7 @@ import {
   sharedContributeNavbarItem,
   sharedPrism,
   sharedImage,
+  sharedAlgoliaSearch,
   sharedHeadTags,
   CROSS_PRODUCT_BASE,
 } from './src/theme-shared/themeConfig';
@@ -73,22 +74,8 @@ const config: Config = {
     './src/plugins/guidesCatalogPlugin.js',
   ],
 
-  themes: [
-    '@docusaurus/theme-mermaid',
-    [
-      '@easyops-cn/docusaurus-search-local',
-      {
-        hashed: true,
-        language: ['en'],
-        highlightSearchTermsOnTargetPage: false,
-        explicitSearchResultPath: true,
-        docsRouteBasePath: '/',
-        indexBlog: false,
-        indexPages: true,
-        searchBarShortcutHint: false,
-      },
-    ],
-  ],
+  // Search is Algolia (themeConfig.algolia), shared across products.
+  themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
     [
@@ -115,6 +102,7 @@ const config: Config = {
     image: sharedImage,
     colorMode: sharedColorMode,
     docs: sharedDocsSidebar,
+    algolia: sharedAlgoliaSearch,
     // "On this page" shows H2/H3 only, matching every real product
     // branch -- see wso2-integrator's own docusaurus.config.ts for the
     // full reasoning.
