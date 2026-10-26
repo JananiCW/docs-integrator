@@ -11,6 +11,7 @@ import {
   sharedBlogNavbarItem,
   sharedPrism,
   sharedImage,
+  sharedAlgoliaSearch,
   sharedHeadTags,
   CROSS_PRODUCT_BASE,
 } from './src/theme-shared/themeConfig';
@@ -67,29 +68,8 @@ const config: Config = {
     './src/plugins/guidesCatalogPlugin',
   ],
 
-  themes: [
-    '@docusaurus/theme-mermaid',
-    [
-      '@easyops-cn/docusaurus-search-local',
-      {
-        hashed: true,
-        language: ['en'],
-        // Was `true`: the plugin's own behavior is to mark *every*
-        // occurrence of the searched term across the whole target
-        // page's <article> and leave it lit for as long as you stay on
-        // that page -- reads as the term being highlighted everywhere
-        // rather than helping you find the one relevant spot. Disabled
-        // in favor of the existing search-result context snippets,
-        // which already show where the match is.
-        highlightSearchTermsOnTargetPage: false,
-        explicitSearchResultPath: true,
-        docsRouteBasePath: '/',
-        indexBlog: false,
-        indexPages: true,
-        searchBarShortcutHint: false,
-      },
-    ],
-  ],
+  // Search is Algolia (themeConfig.algolia), shared across products.
+  themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
     [
@@ -116,6 +96,7 @@ const config: Config = {
     image: sharedImage,
     colorMode: sharedColorMode,
     docs: sharedDocsSidebar,
+    algolia: sharedAlgoliaSearch,
     // "On this page" shows H2/H3 only, matching wso2-integrator/
     // wso2-connectors -- see wso2-integrator's own docusaurus.config.ts
     // for the full reasoning.
