@@ -11,13 +11,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Manage Workflows
 
-A workflow integration runs long-running processes that are made of steps, called activities. A workflow can also wait for a person to complete a human task or review an activity before it continues.
+A workflow executes long-running processes that are made of steps, called activities. A workflow can also wait for a person to complete a human task or review an activity before it continues.
 
 From the WSO2 Cloud console, you can start workflows, monitor their runs, control running workflows, and act on human tasks and reviews.
 
 ## Prerequisites
 
-- The workflow integration is deployed to the environment.
+- The workflow is deployed to the environment.
 - The environment has a Temporal credential. See [Temporal Credentials](../configurations/temporal-credentials.md).
 
 :::info Features that need your identity
@@ -32,14 +32,14 @@ The easiest way to get an identity is to [enable the User Portal](../users-and-a
 
 ## View workflows on the overview page
 
-On the workflow integration's overview page, each environment card shows the following:
+On the workflow overview page, each environment card shows the following:
 
-- **Workflow Definitions**: The workflows that the integration defines. Select one to see its figures.
+- **Workflow Definitions**: The long-running processes that the integration defines. Select one to see its figures.
 - **View Workflows** and **Start New Workflow** buttons.
 - Figures for the selected workflow definition: **Running**, **Suspended**, **Failed (24h)**, **Completed (24h)**, **Pending Reviews**, and **Pending Tasks**. Click a figure to open the matching list.
 
 <ThemedImage
-    alt="Workflow integration overview page with workflow definitions and figures on an environment card"
+    alt="Workflow overview page with workflow definitions and figures on an environment card"
     sources={{
         light: useBaseUrl('/img/manage/cloud/integrations/workflows/overview-card.png'),
         dark: useBaseUrl('/img/manage/cloud/integrations/workflows/overview-card.png'),
@@ -48,7 +48,7 @@ On the workflow integration's overview page, each environment card shows the fol
 
 ## View workflow runs
 
-1. Open the workflow integration.
+1. Open the workflow.
 2. In the left navigation menu, click **Operate** > **Workflows**.
 3. Select the environment, and the deployment track if the integration has more than one.
 
@@ -95,7 +95,7 @@ On the **Workflows** page, click a run to open its details. The details show the
 - The error, if the run failed.
 - A diagram of the workflow's steps and a timeline of each step's executions. Click a step to see its input, result, error, and the number of times it ran. To switch to a list of steps, click the list view icon.
 
-To see the run's raw event history, click the bug icon in the header.
+To see the workflow run raw event history, click the bug icon in the header.
 
 <ThemedImage
     alt="Execution Details of a running workflow with the summary, workflow input, flow diagram, and timeline"
@@ -135,12 +135,12 @@ A reset keeps the workflow ID and starts a new run from an earlier point in the 
 
 ## Act on human tasks and reviews
 
-A workflow can wait for a person in two ways:
+A workflow can wait for a human in two ways:
 
 - **Human task**: The workflow waits for someone to submit a result.
 - **Review**: The workflow waits for someone to approve an activity before it runs, or to decide what to do after an activity fails.
 
-To see them, open the workflow integration, then click **Operate** > **Human Tasks** in the left navigation menu. By default, the page shows pending items. You can filter by type, status, and workflow definition.
+To see them, open the workflow, then click **Operate** > **Human Tasks** in the left navigation menu. By default, the page shows pending items. You can filter by type, status, and workflow definition.
 
 <ThemedImage
     alt="Human Tasks page with human tasks and reviews, filters, and the Select reviews button"

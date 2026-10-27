@@ -11,12 +11,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Temporal Credentials
 
-Workflow integrations run on a Temporal server. A Temporal credential tells WSO2 Cloud - Integration Platform which Temporal server and namespace to connect to, and how to authenticate.
+Workflows run on a Temporal server. A Temporal credential tells WSO2 Cloud which Temporal server and namespace to connect to, and how to authenticate.
 
-You assign each credential to one or more environments. Workflow integrations deployed to an environment connect with that environment's credential. An environment can use only one credential.
+You assign each credential to one or more environments. Workflows deployed to an environment connect with that environment's credential. An environment can use only one credential.
 
 :::info
-Workflow integrations pick up a new or changed credential the next time they are deployed.
+Workflows pick up a new or changed credential the next time they are deployed.
 :::
 
 ## Prerequisites
@@ -59,9 +59,9 @@ Workflow integrations pick up a new or changed credential the next time they are
 10. Under **Environments**, select the environments that use this credential. An environment that another credential already uses is not available.
 11. Click **Save**.
 
-### Add a credential when you import a workflow integration
+### Add a credential when you import a workflow
 
-You can also add a Temporal credential when you [import a workflow integration](../../develop-and-test/create-workspace/import-an-integration.md). If the first environment of the project has no Temporal credential, the import page shows a warning with an **Add Credential** button. Click it to open the **Add Temporal Credential** dialog, then follow steps 6 to 11.
+You can also add a Temporal credential when you [import a workflow](../../develop-and-test/create-workspace/import-an-integration.md). If the first environment of the project has no Temporal credential, the import page shows a warning with an **Add Credential** button. Click it to open the **Add Temporal Credential** dialog, then follow steps 6 to 11.
 
 ## Edit a Temporal credential
 
@@ -76,5 +76,6 @@ To move an environment from one credential to another, first remove it from the 
 
 1. On the **Temporal Credentials** tab, click the delete icon for the credential.
 2. Click **Delete**.
+3. In the confirmation dialog, click **Delete** again.
 
-Workflow integrations in the credential's environments stop using it the next time they are deployed. They cannot connect to Temporal in those environments until you assign another credential to them.
+Workflows in the credential's environments stop using it the next time they are deployed. They cannot connect to Temporal in those environments until you assign another credential to them.
