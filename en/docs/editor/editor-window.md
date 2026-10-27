@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Editor Window
 
-Every view you open in WSO2 Integrator ([Project view](views/project-view.md), [Integration view](views/integration-view.md), [Library view](views/library-view.md), and so on) renders inside the same window with a top menu bar, an activity bar on the far-left edge, an editor tab area with editor toolbar, and the side panels for the project explorer and deployment options. This page describes the parts of that window that stay the same across views, so the view-specific pages do not need to repeat them.
+Every view you open in WSO2 Agent Builder ([Project view](views/project-view.md), [Integration view](views/integration-view.md), [Library view](views/library-view.md), and so on) renders inside the same window with a top menu bar, an activity bar on the far-left edge, an editor tab area with editor toolbar, and the side panels for the project explorer and deployment options. This page describes the parts of that window that stay the same across views, so the view-specific pages do not need to repeat them.
 
 ## Top menu bar
 
@@ -27,7 +27,7 @@ The top menu bar runs across the top edge of the application window and groups t
 
 | Menu | Description |
 |---|---|
-| **WSO2 Integrator** | Application-level actions such as About, Preferences, and Quit. |
+| **WSO2 Agent Builder** | Application-level actions such as About, Preferences, and Quit. |
 | **File** | Open, save, and close projects, files, and windows. |
 | **Edit** | Standard editing actions such as undo, redo, cut, copy, paste, and find. |
 | **Selection** | Selection and multi-cursor actions for the source editor. |
@@ -38,7 +38,7 @@ The top menu bar runs across the top edge of the application window and groups t
 | **Window** | Manage open windows. |
 | **Help** | Documentation, release notes, and support links. |
 
-The top menu bar covers general application actions. Integrator-specific actions live in the [activity bar](#activity-bar) and the [editor toolbar](#editor-toolbar).
+The top menu bar covers general application actions. Agent Builder-specific actions live in the [activity bar](#activity-bar) and the [editor toolbar](#editor-toolbar).
 
 ## Activity bar
 
@@ -54,15 +54,15 @@ The activity bar is the narrow vertical strip on the far-left edge of the editor
 
 | Name | Description |
 |---|---|
+| **WSO2 Agent Builder** | Opens the project explorer for the current view. This is the main entry point back to your project. |
 | **Explorer** | Opens the file explorer to browse the raw project files on disk, such as `.bal` source files and `.toml` configuration files. |
-| **WSO2 Integrator** | Opens the project explorer for the current view. This is the main entry point back to your project. |
 | **Source Control** | Opens the Git source control panel for staging, committing, and reviewing changes. |
 | **Run and Debug** | Opens the debug panel for setting breakpoints, launching the integration with the debugger, and inspecting variables. |
 | **Test Explorer** | Opens the test explorer to view, run, and debug the test cases defined for your integration. |
 | **Accounts** | Shows the signed-in WSO2 Integrator account and provides actions to manage extension account preferences and language model access. |
 | **Manage** | Opens the editor management menu with access to the Command Palette, Profiles, Settings, Keyboard Shortcuts, Snippets, Tasks, and Themes. |
 
-Select the **WSO2 Integrator** icon at any time to return to the project explorer and the current view.
+Select the **WSO2 Agent Builder** icon at any time to return to the project explorer and the current view.
 
 ## Project explorer
 

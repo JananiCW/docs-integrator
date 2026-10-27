@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
 title: Project View
-description: Manage projects with multiple integrations and libraries in WSO2 Integrator.
-keywords: [wso2 integrator, editor, project view, integrations, libraries]
+description: Manage projects with multiple integrations and libraries in WSO2 Agent Builder.
+keywords: [wso2 agent builder, editor, project view, integrations, libraries]
 slug: /editor/views/project-view
 ---
 
@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Project View
 
-The Project view is the top-level view in WSO2 Integrator. It appears when you open a project that contains multiple integrations or libraries, giving you an overview of everything in the project, deployment options, and project-level actions in one place.
+The Project view is the top-level view in WSO2 Agent Builder. It appears when you open a project that contains multiple integrations or libraries, giving you an overview of everything in the project, deployment options, and project-level actions in one place.
 
 <ThemedImage
     alt="Project view overview"
@@ -35,10 +35,10 @@ The project overview canvas is the central area of the Project view. It displays
 
 ### Integrations and libraries
 
-The **Integrations & Libraries** section displays a card grid showing each integration and library in the project. Each card shows:
+The **Agentic Integrations & Libraries** section displays a card grid showing each integration and library in the project. Each card shows:
 
-- The name (for example, `commons` or `FileTracker`).
-- A type badge indicating the entry category. It displays `Library` for libraries or the integration style, such as `API Integration` or `File Integration`, for integrations.
+- The name (for example, `AIAgent` or `Commons`).
+- The agents it contains, such as `Wso2AgentAssistant`. A library card also shows a `Library` badge, followed by any agent definitions it provides, such as `CustomerSupportAgent`.
 
 Click any card to navigate to the [Integration view](integration-view.md) or [Library view](library-view.md), where you can build and manage its artifacts.
 
@@ -48,7 +48,7 @@ Click the **+ Add** button at the top of the canvas to add a new integration or 
 
 ## Deployment options panel
 
-The deployment options panel appears on the right sidebar and provides shortcuts to deploy your integrations to different environments.
+The deployment options panel appears on the right side of an integration's overview when you select **Deploy**. It groups the ways to deploy the integration under **Deploy**, and the ways to monitor and manage it after deployment under **Management**.
 
 <ThemedImage
     alt="Deployment options"
@@ -67,19 +67,8 @@ The deployment options panel appears on the right sidebar and provides shortcuts
 
 At the project level, click **Enable ICP for all integrations** to activate ICP monitoring for every integration in the project at once.
 
-## README section
 
-The README section at the bottom of the Project view displays the contents of your project's `README.md` file. Use it to document the purpose, setup instructions, and usage notes for your project, integrations, and libraries.
 
-<ThemedImage
-    alt="README"
-    sources={{
-        light: useBaseUrl('/img/editor/views/project-view/readme-v5.1.png'),
-        dark: useBaseUrl('/img/editor/views/project-view/readme-v5.1.png'),
-    }}
-/>
-
-Click **Edit** to modify the README directly. If the project does not have a README yet, click **Add a README** to create one.
 
 ## What's next
 

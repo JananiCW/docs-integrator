@@ -18,7 +18,7 @@ If you are already signed in with your WSO2 Cloud account, WSO2 Integrator Copil
 
 1. Open your integration's overview to start working with Copilot.
 
-   - **New integration**: The overview shows the Copilot composer. Describe what you want to build and send it, or pick one of the examples under **Try one of these**. To open the Copilot panel without a prompt, select the Copilot orb above the composer.
+   - **New integration**: The overview shows the Copilot composer. Describe what you want your agent to do and send it, or pick one of the examples under **Examples**. To open the Copilot panel without a prompt, select the Copilot orb above the composer.
 
      <ThemedImage
          alt="The Copilot composer on the overview of a new integration."
@@ -31,7 +31,7 @@ If you are already signed in with your WSO2 Cloud account, WSO2 Integrator Copil
    - **Integration with artifacts**: Select the Copilot orb in the bottom-right corner. Select it once for a quick chat, or double-click it to open the full Copilot panel.
 
      <ThemedImage
-         alt="The WSO2 Integrator Copilot orb on the integration overview."
+         alt="The WSO2 Agent Builder Copilot orb on the integration overview."
          sources={{
              light: useBaseUrl('/img/editor/copilot/copilot-orb.png'),
              dark: useBaseUrl('/img/editor/copilot/copilot-orb.png'),

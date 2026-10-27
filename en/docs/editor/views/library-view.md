@@ -1,8 +1,8 @@
 ---
 sidebar_position: 3
 title: Library View
-description: Build and manage reusable libraries in WSO2 Integrator.
-keywords: [wso2 integrator, editor, library view, reusable libraries, artifacts]
+description: Build and manage reusable libraries in WSO2 Agent Builder.
+keywords: [wso2 agent builder, editor, library view, reusable libraries, artifacts]
 slug: /editor/views/library-view
 ---
 
@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Library View
 
-The Library view is a dedicated view in WSO2 Integrator for creating utilities and shared resources that you can use across multiple integrations. Rather than building executable integrations, you use the Library view to bundle shared type definitions, utility functions, custom connections, and data mapper configurations into a centralized module that other integrations can depend on.
+The Library view is a dedicated view in WSO2 Agent Builder for creating utilities and shared resources that you can use across multiple integrations. Rather than building executable integrations, you use the Library view to bundle shared agents, agent definitions, type definitions, utility functions, custom connections, and data mapper configurations into a centralized module that other integrations can depend on.
 
 <ThemedImage
     alt="Library view overview"
@@ -25,6 +25,8 @@ The Library view is a dedicated view in WSO2 Integrator for creating utilities a
 
 The library overview canvas is the central area of the Library view. It provides a dashboard for the library, showing the library name as a heading and an **Artifacts summary** with a card for each artifact category that has artifacts, such as **Types** and **Functions**. Each card shows the number of artifacts defined in that category.
 
+The canvas can also show the [WSO2 Agent Builder Copilot](../copilot/copilot.md) composer, which asks **What should this library provide?** Describe what you want the library to provide and send it, or pick one of the examples under **Examples**: **Reusable Agent**, **Shared Tools**, **Shared Types**, or **Shared Connection**. To add artifacts yourself instead, select **Add a library artifact manually**.
+
 <ThemedImage
     alt="Library overview canvas"
     sources={{
@@ -35,7 +37,7 @@ The library overview canvas is the central area of the Library view. It provides
 
 ## Add supportive artifacts
 
-Click the **+ Add Artifacts** button at the top right of the canvas to add a new component to your library. This opens a menu with all available artifact types that can be created in a library:
+Click the **+ Add Artifacts** button at the top right of the canvas to add a new component to your library. This opens the **Library Artifacts** dialog, which lists the artifact types that can be created in a library:
 
 - **Function**
 - **Data Mapper**
@@ -46,7 +48,7 @@ Click the **+ Add Artifacts** button at the top right of the canvas to add a new
 - **Configuration**
 
 <ThemedImage
-    alt="Add artifacts menu"
+    alt="The Library Artifacts dialog"
     sources={{
         light: useBaseUrl('/img/editor/views/library-view/add-artifacts-v5.1.png'),
         dark: useBaseUrl('/img/editor/views/library-view/add-artifacts-v5.1.png'),
@@ -90,18 +92,6 @@ The toolbar sits at the top of the Library view and provides quick access to act
 | **Undo** / **Redo** | Reverses or reapplies recent changes to your library artifacts. |
 | **Configure** | Opens the configuration panel, equivalent to adding a configuration from the project explorer. |
 | **Publish** | Builds the library and pushes it to a central repository (such as Ballerina Central), making the module available for other integrations to import. Libraries are not executable, so they are published rather than run. |
-
-## README section
-
-The README section at the bottom of the Library view displays the contents of your library's `README.md` file. Use it to document the library's purpose, setup instructions, and usage notes so other developers know how to consume it. Click **Edit** to modify the README directly.
-
-<ThemedImage
-    alt="README"
-    sources={{
-        light: useBaseUrl('/img/editor/views/library-view/readme-v5.1.png'),
-        dark: useBaseUrl('/img/editor/views/library-view/readme-v5.1.png'),
-    }}
-/>
 
 ## What's next
 
