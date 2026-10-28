@@ -65,8 +65,9 @@ You can also add a Temporal credential when you [import a workflow](../../develo
 
 ## Edit a Temporal credential
 
-1. On the **Temporal Credentials** tab, click the edit icon for the credential.
-2. Update the details, then click **Save**.
+1. In your organization, go to **Admin** > **Settings** > **Credentials** > **Temporal Credentials**.
+2. Click the edit icon for the credential.
+3. Update the details, then click **Save**.
 
 The stored API key, certificates, and private key are kept unless you enter new ones. You must enter them again if you change the authentication method or add an environment, because they are stored per environment and cannot be read back.
 
@@ -74,8 +75,9 @@ To move an environment from one credential to another, first remove it from the 
 
 ## Delete a Temporal credential
 
-1. On the **Temporal Credentials** tab, click the delete icon for the credential.
-2. Click **Delete**.
-3. In the confirmation dialog, click **Delete** again.
+1. In your organization, go to **Admin** > **Settings** > **Credentials** > **Temporal Credentials**.
+2. Click the delete icon for the credential.
+3. Click **Delete**.
+4. In the confirmation dialog, click **Delete** again.
 
 Workflows in the credential's environments stop using it the next time they are deployed. They cannot connect to Temporal in those environments until you assign another credential to them.

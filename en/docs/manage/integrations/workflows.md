@@ -17,7 +17,7 @@ From the WSO2 Cloud console, you can start workflows, monitor their runs, contro
 
 ## Prerequisites
 
-- The workflow is deployed to the environment.
+- The workflow is created and deployed. See [import a workflow](../../develop-and-test/create-workspace/import-an-integration.md).
 - The environment has a Temporal credential. See [Temporal Credentials](../configurations/temporal-credentials.md).
 
 :::info Features that need your identity
@@ -66,10 +66,12 @@ While **Auto-refresh** is on, the list updates on its own. To update it manually
 
 ## Start a workflow
 
-1. On the **Workflows** page, click **Start New Workflow**. You can also click it on the overview page.
-2. Select the **Workflow Definition**.
-3. Enter the input in the form. To enter the input as JSON instead, turn on **Edit as JSON**.
-4. Optional: Click **Advanced** to set the following:
+1. Open the workflow.
+2. In the left navigation menu, click **Operate** > **Workflows**.
+3. On the **Workflows** page, click **Start New Workflow**. You can also click it on the overview page.
+4. Select the **Workflow Definition**.
+5. Enter the input in the form. To enter the input as JSON instead, turn on **Edit as JSON**.
+6. Optional: Click **Advanced** to set the following:
 
     - **Workflow ID**: The ID of the workflow. If you leave it blank, the engine generates one. If you set your own ID, starting the workflow again with the same ID does not start a second workflow.
     - **Timeout (seconds)**: How long the workflow can run.
@@ -88,6 +90,9 @@ The dialog shows the workflow ID of the new run. To open the run, click **View R
 
 ## View the details of a run
 
+1. Open the workflow.
+2. In the left navigation menu, click **Operate** > **Workflows**.
+
 On the **Workflows** page, click a run to open its details. The details show the following:
 
 - The workflow ID, run ID, workflow definition, start and close times, and task queue.
@@ -105,7 +110,7 @@ To see the workflow run raw event history, click the bug icon in the header.
     }}
 />
 
-## Control a run
+### Control a run
 
 Open the details of a run, then click one of the following buttons in the header:
 
@@ -154,7 +159,8 @@ You can act only on the items that you are eligible for. The details of each ite
 
 ### Complete or fail a human task
 
-1. On the **Human Tasks** page, click the task.
+1. In a workflow, in the left navigation menu, click **Operate** > **Human Tasks**.
+2. On the **Human Tasks** page, click the task.
 
     <ThemedImage
         alt="Task Details of a pending human task with its details, task input, and the Complete Task and Mark as Failed actions"
@@ -164,15 +170,16 @@ You can act only on the items that you are eligible for. The details of each ite
         }}
     />
 
-2. Do one of the following:
+3. Do one of the following:
 
     - To complete the task, click **Complete Task**, enter the result, and click **Review before completion**. Then click **Complete Task**. The workflow continues with the result.
     - To fail the task, click **Mark as Failed**, enter a **Reason**, and click **Mark as Failed**. The workflow receives the failure and decides what to do next.
 
 ### Decide a review
 
-1. On the **Human Tasks** page, click the review.
-2. Select a decision:
+1. In a workflow, in the left navigation menu, click **Operate** > **Human Tasks**.
+2. On the **Human Tasks** page, click the review.
+3. Select a decision:
 
     - **Proceed**: Run the activity with its original arguments. For a failed activity, this retries it.
     - **Proceed with Changes**: Edit the arguments first. The console shows what changed before you confirm.
